@@ -1,6 +1,10 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
+test:
+  override:
+    - mocha
+
 jobs:
   build:
     docker:
@@ -34,6 +38,3 @@ jobs:
       # run tests!
       - run: npm test
 
-test:
-  override:
-    - mocha
