@@ -33,3 +33,7 @@ jobs:
 
       # run tests!
       - run: npm test
+
+test:
+  override:
+    - mocha
